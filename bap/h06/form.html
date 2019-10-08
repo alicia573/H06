@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>Voorbeeldformulier</title>
 </head>
+<style>
+
+
+</style>
 <body>
 <H1> Voorbeeldformulier</H1>
-<form action="/test.php">
+<form action="test.php" method="post">
     Voornaam:<br>
     <input type="text" name="Voornaam" value="">
     <br><br>
@@ -20,6 +24,8 @@
     &nbsp; Man
     <input type="radio" name="Vrouw" value="Geslacht"/>
     &nbsp; Vrouw
+     <br> <br>
+    <input type="sumbit" value="Verzenden">
 </form>
 <br> <br>
 
@@ -32,14 +38,10 @@ Kleur ogen
     <option>zwart</option>
     <br><br>
 
-
     <button>Annuleer</button>
     <button>Ok</button>
 
-    <?php
-$date=date_create("2013-03-15");
-echo date_format($date,"Y/m/d H:i:s");
-?>
 
- </body>
+
+  </body>
 </html>
