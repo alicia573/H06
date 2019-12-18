@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <meta charset="UTF-8">
     <title>Voorbeeldformulier</title>
 </head>
-<style>
 
-
-</style>
 <body>
-<H1> Voorbeeldformulier</H1>
-<form action="test.php" method="post">
-    Voornaam:<br>
-    <input type="text" name="Voornaam" value="">
+<div id="wrapper">
+<a href="index.html"><img alt src="img/burton_logo.png" height="100" width="700" /></a>
+    <nav>
+        <a href="index.html" >Home</a>
+        <a >Over ons</a>
+        <a >Producten</a>
+        <a >Contact</a>
+        <a class="Login" methods="get" action="form.html" type="submit" href="form.html"> Login </a>
+    </nav>
+    <section>
+
+<div class="move">
+
     <br><br>
-    Tussenvoegsel: <br>
-    <input type="text" name="Tussenvoegsel" value="">
-    <br><br> Achternaam: <br>
-    <input type="text" name="Achternaam" value="">
+<form action="http://www.savatarian.com/html5/form.php" method="get" id="">
+    <H1> Inlog formulier</H1>
+
+    <section id="section">
+    <span class="veplicht"> * Verplicht Veld</span><br> <br>
+    <label for="voornaam"> Voornaam</label>
+    <input type="text"id="voornaam" name="firstname"><span class="veplicht"> * </span><br><br>
+
+
+
+    <label for="tussenvoegsel"> Tussenvoegsel</label>
+    <input type="text" id="tussenvoegsel" value=""><br><br>
+
+
+
+    <label for="achternaam"> Achternaam</label>
+    <input name="lastname" type="text" id="achternaam" value=""><span class="veplicht"> * </span><br><br>
+
+    <label for="geslacht1"></label>
+    <label for="geslacht"></label>
+    <input type="radio" name="gender"  id="geslacht1" value="Man"/>
+        Man
+    <input type="radio" name="gender" id="geslacht" value="Vrouw"/>
+        Vrouw<span class="veplicht"> * </span>
+        <br><br>
+    <label for="geboortedatum"></label>
+        Geboorte datum:
+        <br>
+    <input  name="geboortedatum" type="date" id="geboortedatum"><span class="veplicht"> * </span>
+    </section>
+
+<section id="section2">
+    <span >E-mail</span>
+    <input  name="email" type="text" id="email"><span class="veplicht"> * </span>
+
     <br><br>
-    Geslacht <br>
-    <input type="radio" name="Man" value="Geslacht"/>
-    &nbsp; Man
-    <input type="radio" name="Vrouw" value="Geslacht"/>
-    &nbsp; Vrouw
-     <br> <br>
-    <input type="sumbit" value="Verzenden">
+
+    <label for="wachtwoord"></label>
+    <span >wachtwoord</span>
+    <input id="wachtwoord" type="text" name="password">
+    <span class="veplicht"> * </span>
+
+    <br><br><input type="submit" value="login">
+</section>
+
+
+
+
 </form>
-<br> <br>
+    <br>
 
-Kleur ogen
-<br>
-<select  style="width: 100px; " name="kleur-ogen">
-    <option>groen</option>
-    <option>blauw</option>
-    <option>bruin</option>
-    <option>zwart</option>
-    <br><br>
+</div>
+        <footer > <br><br><br>Copyright &copy; 2019</footer>
 
-    <button>Annuleer</button>
-    <button>Ok</button>
-
-
-
-  </body>
+</body>
 </html>

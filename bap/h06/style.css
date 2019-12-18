@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+div#wrapper {
+    width: 1200px;
+    margin: auto;
+    background-color: #fed7ff;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 1200px;
+}
+
+
+article#text {
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 50px
+
+}
+section#whole-text{
+    margin-left: 48px;}
+article#img{
+    padding-left: 87px;
+    margin-top: 50px;
+
+}
+section#img-2{
+    margin-top: -345px;
+    margin-left:590px;
+}
+
+img.article{
+    padding-left:-100px;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+}
+a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav{
+
+    padding-top: 20px;
+    background-color: black;
+    height:60px;
+    text-decoration: none;
+    color: white;
+}
+/*form.html---------------------------------------------------------------------------------------------------------------------------------------*/
+.move{
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 400px
+}
+
+body{
+    font-family: sans-serif;
+    text-decoration: none;
+    text-decoration: black;
+}
+.veplicht{
+    color: red;
+}
+.ww{
+    top: 0px;
+}
+
+.veplicht{
+    color: red;
+}
+form{
+
+    width: 1000px;
+    font-size: 18px;
+}
+#section{
+    background-position: center;
+    background-size: 1000px;
+    text-align: left;
+    border-color: blue;
+}
+#section2{
+    width: 700px ;
+    margin-top: -222px;
+    text-align: right;
+    background-color: none;
+    padding-bottom: 300px;
+}
