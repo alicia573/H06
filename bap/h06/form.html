@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
 
-    <meta charset="UTF-8">
-    <title>Voorbeeldformulier</title>
-</head>
+            <meta charset="UTF-8">
+            <title>Voorbeeldformulier</title>
+        </head>
 
-<body>
-<div id="wrapper">
-<a href="index.html"><img alt src="img/burton_logo.png" height="100" width="700" /></a>
-    <nav>
-        <a href="index.html" >Home</a>
-        <a >Over ons</a>
-        <a >Producten</a>
-        <a >Contact</a>
-        <a class="Login" methods="get" action="form.html" type="submit" href="form.html"> Login </a>
-    </nav>
-    <section>
+        <body>
+  <div id="wrapper-form">
 
-<div class="move">
+    <div class="move">
 
-    <br><br>
-<form action="http://www.savatarian.com/html5/form.php" method="get" id="">
-    <H1> Inlog formulier</H1>
+        <form action="http://www.savatarian.com/html5/form.php" method="get" id="">
+            <H1> Inlog formulier</H1>
+            <br>
+            <section id="section"><br> <br>
 
-    <section id="section">
-    <span class="veplicht"> * Verplicht Veld</span><br> <br>
-    <label for="voornaam"> Voornaam</label>
-    <input type="text"id="voornaam" name="firstname"><span class="veplicht"> * </span><br><br>
+                <label for="voornaam"> Voornaam</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text"id="voornaam" name="firstname"><br><br>
+
+                <label for="tussenvoegsel"> Tussenvoegsel</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="tussenvoegsel" name="tussenvoegsel" value=""><br><br>
+
+                <label for="achternaam"> Achternaam</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="lastname" type="text" id="achternaam" value="">
+
+                <br><br>
+                <span>Geslacht</span>
+                <input type="radio" name="gender" id="geslacht1" value="Man"/>
+                   &nbsp;Man
+                <input type="radio" name="gender" id="geslacht" value="Vrouw"/>
+                    &nbsp;Vrouw
+                    <br><br>
+
+                <span>Kleur ogen</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="kleur-ogen" id="select-eyecolor">
+                    <option id="color">Groen</option>
+                    <option id="color">Blauw</option>
+                    <option id="color">Bruin</option>
+                </select>
+                <br><br>
+                <label for="geboortedatum" id="select-birthdate"></label>
+                <span>Geboortedatum</span> &nbsp;
+                <input  name="geboortedatum" type="date" id="geboortedatum">
+                <br><br>
+                <span id="omschrijving">Omschrijving</span>
+               <textarea cols="40" rows="10" id="textarea" name="textarea"></textarea>
+
+            </section>
+
+            <section id="section2">
+                <span>Lekker eten:</span>
+                <label class="container" >Patat
+                    <input type="checkbox" checked="checked" name="lekker-eten">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Bruine Bonen
+                    <input type="checkbox" name="lekker-eten">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Linzen
+                    <input type="checkbox" name="lekker-eten">
+                    <span class="checkmark"></span>
+                </label>
+            </section>
+
+            <section id="button-section">
+                <input type="reset" value="Annuleer" id="button">
+                <input type="submit" value="Login" id="button">
+             </section>
 
 
-
-    <label for="tussenvoegsel"> Tussenvoegsel</label>
-    <input type="text" id="tussenvoegsel" value=""><br><br>
-
-
-
-    <label for="achternaam"> Achternaam</label>
-    <input name="lastname" type="text" id="achternaam" value=""><span class="veplicht"> * </span><br><br>
-
-    <label for="geslacht1"></label>
-    <label for="geslacht"></label>
-    <input type="radio" name="gender"  id="geslacht1" value="Man"/>
-        Man
-    <input type="radio" name="gender" id="geslacht" value="Vrouw"/>
-        Vrouw<span class="veplicht"> * </span>
-        <br><br>
-    <label for="geboortedatum"></label>
-        Geboorte datum:
-        <br>
-    <input  name="geboortedatum" type="date" id="geboortedatum"><span class="veplicht"> * </span>
-    </section>
-
-<section id="section2">
-    <span >E-mail</span>
-    <input  name="email" type="text" id="email"><span class="veplicht"> * </span>
-
-    <br><br>
-
-    <label for="wachtwoord"></label>
-    <span >wachtwoord</span>
-    <input id="wachtwoord" type="text" name="password">
-    <span class="veplicht"> * </span>
-
-    <br><br><input type="submit" value="login">
-</section>
-
-
-
-
-</form>
-    <br>
-
-</div>
-        <footer > <br><br><br>Copyright &copy; 2019</footer>
-
-</body>
+             </form>
+         </div>
+       </div>
+   </body>
 </html>

@@ -2,36 +2,37 @@
     box-sizing: border-box;
 }
 div#wrapper {
-    width: 1200px;
+    width: 1060px;
     margin: auto;
-    background-color: #fed7ff;
-}
+    background-color:#FFE9EB;
 
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-    height: 150px;
-    width: 1200px;
+}
+body{
+
 }
 
 
 article#text {
     margin-top: 10px;
     display: inline-block;
-    padding-left: 50px
+    margin-left: 40px;
 
 }
 section#whole-text{
-    margin-left: 48px;}
+    margin-left: -20px
+}
 article#img{
-    padding-left: 87px;
-    margin-top: 50px;
+    padding-left: 20px;
+    margin-top: 30px;
 
 }
 section#img-2{
     margin-top: -345px;
-    margin-left:590px;
+    margin-left:530px;
+}
+#logo{
+    margin-left: 20px;
+
 }
 
 img.article{
@@ -40,56 +41,143 @@ img.article{
     display: inline-block;
     position: absolute;
 }
-a {
-    padding-left: 10px;
-    text-decoration: none;
-    color: white;
-}
 nav{
-
-    padding-top: 20px;
-    background-color: black;
-    height:60px;
-    text-decoration: none;
-    color: white;
+    padding-left: 20px;
 }
+a{
+    padding-left: 10px;
+}
+
 /*form.html---------------------------------------------------------------------------------------------------------------------------------------*/
 .move{
-    margin-top: 70px;
+    margin-top: 10px;
     margin-left: 100px;
     width: 400px
 }
+div#wrapper-form{
+    width: 1060px;
+    margin: auto;
+    background-color:white;
 
-body{
-    font-family: sans-serif;
-    text-decoration: none;
-    text-decoration: black;
-}
-.veplicht{
-    color: red;
-}
-.ww{
-    top: 0px;
 }
 
-.veplicht{
-    color: red;
+.voornaam .tussenvoegsel .achternaam {
+  border-style: double;
 }
+
 form{
-
     width: 1000px;
-    font-size: 18px;
+    font-size: 19px;
 }
 #section{
     background-position: center;
     background-size: 1000px;
     text-align: left;
     border-color: blue;
+    color: #7691a9;
+
 }
 #section2{
-    width: 700px ;
-    margin-top: -222px;
-    text-align: right;
-    background-color: none;
+    width: 300px ;
+    margin-top: -290px;
+    margin-left: 500px;
     padding-bottom: 300px;
+    color: #7691a9;
+}
+#select-eyecolor{
+    width: 100px;
+    background-color: 	#CEE2F3;
+   margin-left: 10px;
+}
+
+#color:hover{
+    color: orange;
+}
+
+#select-birthdate{
+    width: 200px;
+
+}
+#geboortedatum{
+    margin-left: 10px;
+}
+textarea{
+    margin-top: 1px;
+    position: absolute;
+   margin-left: 40px;
+}
+#geslacht , #geslacht1{
+    margin-left: 65px;
+}
+
+#button-section{
+    margin-top: 100px;
+    margin-left: 500px;
+}#button{
+    color: #2d5a83;
+     background-color:#A2C3E2;
+     width: 100px;
+     height: 30px;
+     background: linear-gradient(to bottom, rgb(207, 226, 243) 50%, rgba(159, 197, 232, 0.78) 50%);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+ }
+
+
+/*----------- Checkbox----------------------------------------------------------------*/
+.container input:checked ~ .checkmark {
+    background-color: rgb(66, 124, 175);
+ }
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: rgb(66, 124, 175) solid;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: rgb(207, 226, 243);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 140px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 105px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(207, 226, 243)
 }
